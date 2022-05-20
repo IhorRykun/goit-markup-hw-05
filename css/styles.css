@@ -495,9 +495,6 @@ ul {
   margin-left: 30px;
 }
 
-.lst-portfolio a:focus {
-  background-color: var(--blue-cl);
-}
 
 .lst-portfolio-title {
   margin-bottom: 4px;
