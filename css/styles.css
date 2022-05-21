@@ -324,6 +324,7 @@ ul {
   height: 30px;
   cursor: pointer;
 
+
 }
 
 .list-item {
@@ -480,7 +481,6 @@ ul {
 }
 
 .visual-hidden {
-  transform: scale(0);
   position: fixed;
 }
 
@@ -565,7 +565,6 @@ ul {
   margin-bottom: 30px;
 }
 
-
 .lst-portfolio-itm:nth-child(3n) {
   margin-right: 0;
 }
@@ -582,6 +581,37 @@ ul {
 .lst-paragraph {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.after-description {
+  position: relative;
+}
+
+.after-description::before {
+  content: "";
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 370px;
+  height: 294px;
+  background-color: var(--blue-cl);
+  transform: translatey(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.block-orvelay {
+  display: inline-block;
+  position: absolute;
+
+  width: 370px;
+  height: 294px;
+}
+
+.lst-portfolio-itm:hover .after-description::before {
+  transform: translate(0);
+  opacity: 1;
+
 }
 
 /* Наші клієнти */
@@ -673,6 +703,7 @@ ul {
   display: block;
   max-width: 100%;
 }
+
 
 .list-li {
   position: relative;
