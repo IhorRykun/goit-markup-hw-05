@@ -44,7 +44,12 @@
       <div class="container">
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
         <div class="conteiner-main-btn">
-          <button class="main-btn" type="button">Заказать услугу</button>
+          <button class="main-btn" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="back-drop is-hidden" data-modal>
+          <div class="model-wraper">
+            <button type="button" data-modal-close>X</button>
+          </div>
         </div>
       </div>
     </section>
@@ -389,13 +394,7 @@
       </div>
     </div>
   </footer>
-
-  <ul>
-    <li class="box"><a href="" class="img"></a></li>
-    <li class="box"><a href="" class="img"></a></li>
-    <li class="box"><a href="" class="img"></a></li>
-    <li class="box"><a href="" class="img"></a></li>
-  </ul>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
