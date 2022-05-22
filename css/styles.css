@@ -606,10 +606,9 @@ ul {
 
 .text-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  align-items: center;
-  padding: 63px 24px;
+  top: 20%;
+  left: 10%;
+  transform: translate(-20%, -10%);
 
   font-size: 18px;
   line-height: 1.56;
