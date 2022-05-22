@@ -589,7 +589,7 @@ ul {
 .lst-paragraph {
   font-size: 16px;
   line-height: 1.88;
-  font-family: inherit;
+  color: var(--grey-cl);
 }
 
 .after-description {
