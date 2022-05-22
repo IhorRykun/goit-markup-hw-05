@@ -789,8 +789,9 @@ ul {
   margin-left: 70px;
 }
 
+
 .footer-contact:focus,
-.footer-animation:hover {
+.footer-contact:hover {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1.1);
 }
