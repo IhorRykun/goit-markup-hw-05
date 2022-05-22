@@ -109,11 +109,8 @@ ul {
   left: 0;
 }
 
-
-
 /* Логотип компанії */
 .logo {
-
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -398,7 +395,8 @@ ul {
   background-color: var(--blue-cl);
 }
 
-.link-svg:hover .socials-svg {
+.link-svg:hover .socials-svg,
+.link-svg:focus .socials-svg {
   fill: var(--white-cl);
   transform: scale(0.9);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -504,10 +502,7 @@ ul {
   border-radius: 4px;
   border: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
-
 
 .portfolio-container {
   display: block;
@@ -531,6 +526,8 @@ ul {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transform: scale(1.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list a {
@@ -632,7 +629,8 @@ ul {
 .porfolio-link:focus .after-description::before {
   transform: translate(0);
   opacity: 1;
-
+  transform: scale(1.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Наші клієнти */
@@ -718,6 +716,7 @@ ul {
 }
 
 
+
 .container-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -788,4 +787,10 @@ ul {
 
 .svg-footer-socsety {
   margin-left: 70px;
+}
+
+.footer-contact:focus,
+.footer-animation:hover {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
 }
