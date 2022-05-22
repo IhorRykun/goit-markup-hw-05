@@ -52,6 +52,7 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -66,7 +67,6 @@ ul {
 .header-navigation .site-nav+.site-nav {
   margin-left: 50px;
 }
-
 
 .mail-nav .site-nav+.site-nav {
   margin-left: 50px;
@@ -91,7 +91,6 @@ ul {
   margin-right: 10px;
   fill: currentColor;
 }
-
 
 .site-nav {
   position: relative;
@@ -168,6 +167,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-cl);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .force-contact {
@@ -258,6 +258,8 @@ ul {
   letter-spacing: 0.06em;
   color: var(--white-cl);
   background-color: var(--blue-cl);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .main-btn:hover,
@@ -379,6 +381,7 @@ ul {
 
 .socials-svg {
   fill: var(--white-grey);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg {
@@ -389,25 +392,29 @@ ul {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg:hover {
   background-color: var(--blue-cl);
+  transform: scale(1.4);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg:hover .socials-svg,
 .link-svg:focus .socials-svg {
   fill: var(--white-cl);
-  transform: scale(0.7);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg:focus {
   background-color: var(--blue-cl);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg:focus .socials-svg {
   fill: var(--white-cl);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-item {
@@ -655,6 +662,7 @@ ul {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-klienty {
@@ -792,39 +800,4 @@ ul {
 .footer-list:focus {
   color: #2196F3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-work-div-img {
-  display: flex;
-  justify-content: center;
-
-}
-
-.li-img-div {
-  margin: 30px;
-  position: relative;
-}
-
-.img-container-black {
-  display: block;
-}
-
-.div-container-bleck {
-  display: block;
-  position: absolute;
-  width: 370px;
-  bottom: 8px;
-
-  background-color: rgba(47, 48, 58, 0.8);
-  padding: 20px 0;
-}
-
-.title-conteiner-bleck {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
