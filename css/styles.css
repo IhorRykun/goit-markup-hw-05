@@ -626,7 +626,9 @@ ul {
 }
 
 .lst-portfolio-itm:hover .after-description::before,
-.lst-portfolio-itm:hover .text-overlay {
+.lst-portfolio-itm:hover .text-overlay,
+.porfolio-link:focus .text-overlay,
+.porfolio-link:focus .after-description::before {
   transform: translate(0);
   opacity: 1;
 
@@ -753,7 +755,8 @@ ul {
   transform: translate(30%, 30%);
 }
 
-.lst-portfolio-itm:hover {
+.porfolio-link:hover,
+.porfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
